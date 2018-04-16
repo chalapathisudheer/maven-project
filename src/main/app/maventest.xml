@@ -21,6 +21,6 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 ---
 payload]]></dw:set-payload>
         </dw:transform-message>
-        <set-payload value="#['Hello This is my first Maven Project']" doc:name="Set Payload"/>
+        <set-payload value="#['Hello: This is my first Maven Project']" doc:name="Set Payload"/>
     </flow>
 </mule>
