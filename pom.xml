@@ -86,7 +86,7 @@
 <deploymentType>cloudhub</deploymentType>
 <muleVersion>3.8.4</muleVersion>
 <username>sprabhala</username>
-<password>hacker81</password>
+<password>Hacker@81</password>
 <workerType>Micro</workerType>
 <redeploy>true</redeploy>
 <environment>Production</environment>
