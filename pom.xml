@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
-	<artifactId>maventest</artifactId>
+	<artifactId>maventest-sp</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
 	<name>Mule maventest Application</name>
@@ -78,6 +78,30 @@
                     </coverage>
                 </configuration>
             </plugin>
+            <plugin>
+<groupId>org.mule.tools.maven</groupId>
+<artifactId>mule-maven-plugin</artifactId>
+<version>2.0</version>
+<configuration>
+<deploymentType>cloudhub</deploymentType>
+<muleVersion>3.8.4</muleVersion>
+<username>sprabhala</username>
+<password>hacker81</password>
+<workerType>Micro</workerType>
+<redeploy>true</redeploy>
+<environment>Production</environment>
+</configuration>
+<executions>
+<execution>
+<id>deploy</id>
+<phase>deploy</phase>
+<goals>
+<goal>deploy</goal>
+
+</goals>
+</execution>
+</executions>
+</plugin>
         </plugins>
 	<testResources>
             <testResource>
